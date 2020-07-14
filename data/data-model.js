@@ -1,6 +1,8 @@
 const db = require("./db-config");
 
 module.exports = {
+  findByUsername,
+  addUser,
   findPosts,
   findPostById,
   findComments,
@@ -12,6 +14,19 @@ module.exports = {
   deletePost,
   deleteComment,
 };
+
+function findByUsername(username) {
+  return db("user").where({ username }).first();
+}
+
+function addUser(user) {
+  return db("user")
+    .insert(user, "id")
+    .then(([id]) => {
+      // return user by the id
+      return db("user").where({ id }).first();
+    });
+}
 
 function findPosts() {
   return db("post");
