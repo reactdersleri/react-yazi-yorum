@@ -1,6 +1,7 @@
 ## API Erişim Noktaları
 
     API Erişim Adresi: https://react-yazi-yorum.herokuapp.com/
+    Postman Collection: https://www.getpostman.com/collections/702cbcc6cb3a353fdf12
 
 |  Metod | Erişim Noktası                 | Açıklama                                                                                                                                                                      |
 | -----: | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
